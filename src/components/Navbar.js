@@ -4,10 +4,10 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   const item = useSelector((state=> state.cart));
-  console.log(item)
+  
   return (
     <div style={{display:'flex', alignItems:'center', justifyContent:'space-between'}}>
-      <span className='logo'>Redux Store</span>
+      <span className='logo'>Shopping Cart</span>
       <div>
         <Link className='navLink' to='/' >Home</Link>
         <Link className='navLink' to='/cart'>Cart</Link>
